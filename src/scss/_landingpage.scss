@@ -1,0 +1,32 @@
+#landing {
+
+  //landing background 
+  .landing-bg {
+    padding: 438px 0;
+    background-image: linear-gradient(to right bottom,
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)), url(../img/night-time-landscape.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+    .landing-title {
+      color: $color2;
+      font-family: $font-title;
+      font-weight: 900;
+      font-size: 9rem;
+      text-align: center;
+      margin-bottom: 25px;
+      letter-spacing: 7px;
+    }
+
+    .quote {
+      font-family: $font-body;
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: $color2;
+      text-align: center;
+    }
+  }
+}

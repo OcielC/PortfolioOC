@@ -1,0 +1,23 @@
+#about {
+  .about-me {
+    background-color: $color2;
+    padding: 200px 0;
+
+    .about-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      text-align: center;
+      font-family: $font-title;
+      margin-bottom: 30px;
+    }
+
+    .about-description p {
+      font-size: 1.7rem;
+      font-family: $font-body;
+      font-weight: 300;
+      text-align: center;
+      line-height: 2;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color1, .8);
+  z-index: 7777;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+
+  &__content {
+    width: 75%;
+    background-color: $color2;
+    box-shadow: 0 2rem 4rem rgba($color1, .25);
+    border-radius: 5px;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.25);
+    transition: all .4s .2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__left {
+    width: 40%;
+    display: table-cell;
+    padding: 5rem;
+    text-align: center;
+
+    h4 {
+      font-size: 2.5rem;
+      padding-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.7rem;
+      padding-bottom: 2rem;
+    }
+
+    .btn {
+      font-size: 1.6rem;
+      display: inline-block;
+      border: 2px solid $color1;
+      padding: 1rem 1.6rem;
+      color: $color1;
+      text-transform: capitalize;
+      text-align: center;
+      outline: none;
+      cursor: pointer;
+      border-radius: 5px;
+
+
+      &:hover {
+        -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.75);
+        box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.75);
+        background-color: $color1;
+        color: $color2;
+        transition: all .4s ease-in-out;
+      }
+    }
+
+    .btn-green {
+      margin-right: 2rem;
+    }
+  }
+
+  &__right {
+    width: 60%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    padding: 4rem;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  // Open States
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:target &__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__close {
+
+    &:link,
+    &:visited {
+      color: $color-grey-dark;
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all .2s;
+      line-height: 1;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

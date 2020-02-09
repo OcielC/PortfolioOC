@@ -1,0 +1,60 @@
+#skills {
+  .skills-bg {
+    background: $color3;
+    padding: 100px 0;
+
+    .my-skills-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      font-family: $font-title;
+      text-transform: capitalize;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .my-skills {
+      font-size: 4rem;
+      font-weight: 500;
+      font-family: $font-body;
+      line-height: 2;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .fab {
+        font-size: 8rem;
+        color: #cececf;
+      }
+
+      .fa-html5:hover {
+        color: #E34F27;
+        transition: all .5s ease-in-out;
+      }
+
+      .fa-css3-alt:hover {
+        color: #254DE3;
+        transition: all .5s ease-in-out;
+      }
+
+      .fa-js:hover {
+        color: #F0DB50;
+        transition: all .5s ease-in-out;
+      }
+
+      .fa-sketch:hover {
+        color: #FDAD00;
+        transition: all .5s ease-in-out;
+      }
+
+      .fa-git:hover {
+        color: #F54D27;
+        transition: all .5s ease-in-out;
+      }
+
+      .fa-sass:hover {
+        color: #CF649A;
+        transition: all .5s ease-in-out;
+      }
+    }
+  }
+}

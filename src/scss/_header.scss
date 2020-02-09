@@ -1,0 +1,42 @@
+.nav-menu {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 6rem;
+  width: 100%;
+  font-size: 1.8rem;
+  font-family: $font-body;
+
+
+  .nav-links {
+    margin: 1em 0 .5em;
+    text-align: center;
+    display: inline;
+    padding: .5em 1.5em;
+  }
+
+  .menu-items {
+    display: inline-block;
+    color: #ffffff;
+    border-bottom: 2px solid transparent;
+    padding: 5px;
+
+    &:hover {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+
+  .active {
+    color: black;
+    background-color: $color2;
+  }
+}
