@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.nav-menu {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+
+.flexbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 6rem;
+  width: 100%;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif; }
+  .flexbox .nav-links {
+    margin: 1em 0 .5em;
+    text-align: center;
+    display: inline;
+    padding: .5em 1.5em; }
+  .flexbox .menu-items {
+    display: inline-block;
+    color: #ffffff;
+    border-bottom: 2px solid transparent;
+    padding: 5px; }
+    .flexbox .menu-items:hover {
+      border-bottom: 2px solid #ffffff; }
+  .flexbox .active {
+    color: black;
+    background-color: #ffffff; }
+
+#landing .landing-bg {
+  padding: 438px 0;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/night-time-landscape.c74cebe2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%; }
+  #landing .landing-bg .landing-title {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 9rem;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 7px; }
+  #landing .landing-bg .quote {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center; }
+
+#about .about-me {
+  background-color: #ffffff;
+  padding: 200px 0; }
+  #about .about-me .about-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 30px; }
+  #about .about-me .about-description p {
+    font-size: 1.7rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    line-height: 2; }
+
+#skills .skills-bg {
+  background: #fafafa;
+  padding: 100px 0; }
+  #skills .skills-bg .my-skills-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 60px; }
+  #skills .skills-bg .my-skills {
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    line-height: 2;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    #skills .skills-bg .my-skills .fab {
+      font-size: 8rem;
+      color: #cececf; }
+    #skills .skills-bg .my-skills .fa-html5:hover {
+      color: #E34F27;
+      transition: all .5s ease-in-out; }
+    #skills .skills-bg .my-skills .fa-css3-alt:hover {
+      color: #254DE3;
+      transition: all .5s ease-in-out; }
+    #skills .skills-bg .my-skills .fa-js:hover {
+      color: #F0DB50;
+      transition: all .5s ease-in-out; }
+    #skills .skills-bg .my-skills .fa-sketch:hover {
+      color: #FDAD00;
+      transition: all .5s ease-in-out; }
+    #skills .skills-bg .my-skills .fa-git:hover {
+      color: #F54D27;
+      transition: all .5s ease-in-out; }
+    #skills .skills-bg .my-skills .fa-sass:hover {
+      color: #CF649A;
+      transition: all .5s ease-in-out; }
+
+#portfolio {
+  padding: 10rem 0;
+  /* Adding padding between each column*/ }
+  #portfolio .portfolio-bg {
+    background-color: #ffffff; }
+  #portfolio .portfolio-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 30px; }
+  #portfolio .portfolio-row {
+    margin: 8px -16px; }
+  #portfolio .portfolio-row,
+  #portfolio .project-column {
+    padding: 8px; }
+  #portfolio .project-column {
+    float: left;
+    width: 33.33%;
+    display: none; }
+    #portfolio .project-column .content {
+      position: relative;
+      border-radius: 3px; }
+      #portfolio .project-column .content__img {
+        display: block;
+        width: 100%;
+        height: auto; }
+  #portfolio .project-row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #portfolio .show {
+    display: block; }
+  #portfolio .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2rem; }
+    #portfolio .btn:hover {
+      background-color: #fafafa; }
+    #portfolio .btn.active {
+      background-color: black;
+      color: white; }
+
+#copyright .footer-bg {
+  padding: 80px 0;
+  background-color: #0c0b0b; }
+
+#copyright .footer-privacy {
+  text-align: center; }
+  #copyright .footer-privacy p {
+    color: white;
+    font-size: 1.5rem; }
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(12, 11, 11, 0.8);
+  z-index: 7777;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  .popup__content {
+    width: 75%;
+    background-color: #ffffff;
+    box-shadow: 0 2rem 4rem rgba(12, 11, 11, 0.25);
+    border-radius: 5px;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .4s .2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .popup__left {
+    width: 40%;
+    display: table-cell;
+    padding: 5rem;
+    text-align: center; }
+    .popup__left h4 {
+      font-size: 2.5rem;
+      padding-bottom: 2rem; }
+    .popup__left p {
+      font-size: 1.7rem;
+      padding-bottom: 2rem; }
+    .popup__left .btn {
+      font-size: 1.6rem;
+      display: inline-block;
+      border: 2px solid #0c0b0b;
+      padding: 1rem 1.6rem;
+      color: #0c0b0b;
+      text-transform: capitalize;
+      text-align: center;
+      outline: none;
+      cursor: pointer;
+      border-radius: 5px; }
+      .popup__left .btn:hover {
+        -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.75);
+        box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.75);
+        background-color: #0c0b0b;
+        color: #ffffff;
+        transition: all .4s ease-in-out; }
+    .popup__left .btn-green {
+      margin-right: 2rem; }
+  .popup__right {
+    width: 60%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+    .popup__right img {
+      width: 100%; }
+  .popup__text {
+    font-size: 1.4rem;
+    padding: 4rem;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__close:link, .popup__close:visited {
+    color: #777;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+    line-height: 1; }
+  .popup__close:hover {
+    cursor: pointer; }
+
+/*
+0 - 600px :           Phone
+600 - 900px:        Tablet portrait
+900 - 1200px:      Tablet landscape
+[1200 - 1800px] is where our normal styles apply
+1800px + :            Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+* {
+  box-sizing: border-box;
+  font-size: 16px; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 1400px;
+  max-width: 100%;
+  margin: auto; }
+
+.heading-tertiary {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: capitalize; }
+
+
+/*# sourceMappingURL=/app.c3f9f951.css.map */

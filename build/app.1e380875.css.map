@@ -1,0 +1,1 @@
+{"version":3,"sources":["scss/main.scss","scss/_variables.scss"],"names":[],"mappings":"AAEA,KACE,eCHiB,CDEnB,QAII,wBAAyB","file":"app.1e380875.css","sourceRoot":"../src","sourcesContent":["@import 'variables';\n\nbody {\n  background: $background;\n\n  h1 {\n    text-transform: uppercase;\n  }\n}","$background: yellow;"]}
